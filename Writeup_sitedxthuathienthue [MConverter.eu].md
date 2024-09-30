@@ -22,12 +22,12 @@ cookie của user, với 3 thông báo được hiển thị cùng 1 lúc. Ta c�
 hiểu được rằng payload ở cả 3 trường đều đã tác động vào hệ thống.
 
 ![A screen shot of a computer Description automatically
-generated](a_little_bit_of_hacking/image2.png){width="6.5in"
+generated](./image2.png){width="6.5in"
 height="3.2555555555555555in"}
 
 Sau khi nhấn nút OK, event sẽ đựợc hiển thị dưới tên như dưới đây :  
 ![A close up of a screen Description automatically
-generated](a_little_bit_of_hacking/image3.png){width="6.5in"
+generated](./image3.png){width="6.5in"
 height="1.0881944444444445in"}
 
 Ta có thể thấy tên sự kiện chỉ còn đọng lại "phucduuu", phần JS còn lại
@@ -54,7 +54,7 @@ gói tin ở phía trên, mình đã bắt lại bằng burp suite, sau đó ch�
 payload bằng một đoạn mã .aspx với nội dung như sau :
 
 ![A screenshot of a computer screen Description automatically
-generated](a_little_bit_of_hacking/image4.png){width="6.5in"
+generated](./image4.png){width="6.5in"
 height="2.9430555555555555in"}
 
 Đoạn code này sẽ tạo một kết nối TCP đến ip và port được chỉ định, sau
@@ -66,7 +66,7 @@ Sau khi đã gửi gói tin đến ứng dụng web, nhìn response để thấy
 Tiếp theo set up listen trên port 80, và truy cập url mà site đã trả về.
 
 ![A screenshot of a computer Description automatically
-generated](a_little_bit_of_hacking/image5.png){width="6.5in" height="4.208333333333333in"}
+generated](./image5.png){width="6.5in" height="4.208333333333333in"}
 
 Ở đây mình đã check user của folder upload, và xem một số thông tin cơ
 bản.
