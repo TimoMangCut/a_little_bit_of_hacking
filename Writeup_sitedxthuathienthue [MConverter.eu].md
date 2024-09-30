@@ -10,7 +10,7 @@ có rất nhiều trường có thể injection.
 Ở đây mình sẽ khai thác 2 lỗi đó là XSS và File Inclusion
 
 ![A screenshot of a computer Description automatically
-generated](a_little_bit_of_hacking/image1.png){width="6.5in" height="3.3125in"}
+generated](./image1.png){width="6.5in" height="3.3125in"}
 
 Mình sẽ inject payload XSS vào cả 3 trường : - "tên sự kiện, tóm tắt và
 nội dung" với cùng 1 payload JS đó là hiển thị thông báo cookie của
