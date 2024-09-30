@@ -10,7 +10,7 @@ có rất nhiều trường có thể injection.
 Ở đây mình sẽ khai thác 2 lỗi đó là XSS và File Inclusion
 
 ![A screenshot of a computer Description automatically
-generated](./image1.png)
+generated](./images/image1.png)
 
 Mình sẽ inject payload XSS vào cả 3 trường : - "tên sự kiện, tóm tắt và
 nội dung" với cùng 1 payload JS đó là hiển thị thông báo cookie của
@@ -22,11 +22,11 @@ cookie của user, với 3 thông báo được hiển thị cùng 1 lúc. Ta c�
 hiểu được rằng payload ở cả 3 trường đều đã tác động vào hệ thống.
 
 ![A screen shot of a computer Description automatically
-generated](./image2.png)
+generated](./images/image2.png)
 
 Sau khi nhấn nút OK, event sẽ đựợc hiển thị dưới tên như dưới đây :  
 ![A close up of a screen Description automatically
-generated](./image3.png)
+generated](./images/image3.png)
 Ta có thể thấy tên sự kiện chỉ còn đọng lại "phucduuu", phần JS còn lại
 đã đi đâu?
 
@@ -51,7 +51,7 @@ gói tin ở phía trên, mình đã bắt lại bằng burp suite, sau đó ch�
 payload bằng một đoạn mã .aspx với nội dung như sau :
 
 ![A screenshot of a computer screen Description automatically
-generated](./image4.png)
+generated](./images/image4.png)
 Đoạn code này sẽ tạo một kết nối TCP đến ip và port được chỉ định, sau
 đó mình sẽ listen trên cổng đã được IP public forwarding.
 
@@ -61,7 +61,7 @@ Sau khi đã gửi gói tin đến ứng dụng web, nhìn response để thấy
 Tiếp theo set up listen trên port 80, và truy cập url mà site đã trả về.
 
 ![A screenshot of a computer Description automatically
-generated](./image5.png)}
+generated](./images/image5.png)}
 
 Ở đây mình đã check user của folder upload, và xem một số thông tin cơ
 bản.
