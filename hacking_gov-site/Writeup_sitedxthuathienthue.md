@@ -31,7 +31,7 @@ Ta có thể thấy tên sự kiện chỉ còn đọng lại "phucduuu", `phầ
 đã đi đâu?`
 
 Câu trả lời là nó `vẫn ở đó`, vẫn ở phía sau chữ "phucduuu", nhưng nó `đang
-được thực thi và hiển thị`.
+được thực thi và hiển thị lên đoạn thông báo vừa rồi`.
 
 Một câu hỏi nữa, đó là : Nếu như user thấy được cookie của chính bản
 thân họ thì chẳng phải là một chuyện bình thường hay sao ?
