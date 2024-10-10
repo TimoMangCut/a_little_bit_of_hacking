@@ -7,7 +7,7 @@ Chức năng : Đăng ký sự kiện
 Dưới đây là một form đăng ký sự kiện mà khi nhìn vào ta có thể thấy được
 có rất nhiều trường có thể injection.
 
-Ở đây mình sẽ khai thác 2 lỗi đó là XSS và File Inclusion
+Ở đây mình sẽ khai thác 2 lỗi đó là XSS và File Upload to RCE
 
 ![A screenshot of a computer Description automatically
 generated](./images/image1.png)
@@ -27,38 +27,38 @@ generated](./images/image2.png)
 Sau khi nhấn nút OK, event sẽ đựợc hiển thị dưới tên như dưới đây :  
 ![A close up of a screen Description automatically
 generated](./images/image3.png)
-Ta có thể thấy tên sự kiện chỉ còn đọng lại "phucduuu", phần JS còn lại
-đã đi đâu?
+Ta có thể thấy tên sự kiện chỉ còn đọng lại "phucduuu", `phần JS còn lại
+đã đi đâu?`
 
-Câu trả lời là nó vẫn ở đó, vẫn ở phía sau chữ "phucduuu", nhưng nó đang
-được thực thi và hiển thị.
+Câu trả lời là nó `vẫn ở đó`, vẫn ở phía sau chữ "phucduuu", nhưng nó `đang
+được thực thi và hiển thị`.
 
 Một câu hỏi nữa, đó là : Nếu như user thấy được cookie của chính bản
 thân họ thì chẳng phải là một chuyện bình thường hay sao ?
 
-Câu trả lời sẽ là : Mình có thể xài payload khác, có thể user sẽ không
-có hiển thị gì cả. Mà ngầm gửi một gói tin đến một trang web mà "mình"
-host. Gói tin đó sẽ bao gồm cookie của user, kèm theo đó là trường
+Câu trả lời sẽ là : Mình `có thể` xài payload khác, có thể user sẽ không
+có hiển thị gì cả. Mà `ngầm gửi` một gói tin đến một trang web mà `"mình"
+host`. Gói tin đó sẽ bao gồm `cookie của user`, kèm theo đó là trường
 \`referer\`để biết chính xác user đó đến từ trang web nào. Nhưng đây là
-một trang web gov, bạn có thể hình dung sẽ ra sao nếu mình khai thác một
-trang web gov rồi đấy.
+một trang `web gov`, bạn có thể hình dung sẽ ra sao `nếu` mình `khai thác` một
+trang web `gov` rồi đấy.
 
-\*Nội dung của bài này chỉ dừng lại ở việc phục vụ mục đích học tập.
+`\*Nội dung của bài này chỉ dừng lại ở việc phục vụ mục đích học tập.`
 
 Trong lúc sử dụng thử trang web, mình đã biết được rằng site này sử dụng
-.NET. Tiếp theo mình sẽ khai thác với lỗi File Inclusion, trong lúc gửi
+.NET. Tiếp theo mình sẽ khai thác với lỗi File Upload, trong lúc gửi
 gói tin ở phía trên, mình đã bắt lại bằng burp suite, sau đó chèn
 payload bằng một đoạn mã .aspx với nội dung như sau :
 
 ![A screenshot of a computer screen Description automatically
 generated](./images/image4.png)
-Đoạn code này sẽ tạo một kết nối TCP đến ip và port được chỉ định, sau
-đó mình sẽ listen trên cổng đã được IP public forwarding.
+Đoạn code này sẽ `tạo một kết nối TCP` đến `ip và port` được `chỉ định`, sau
+đó mình sẽ `listen trên cổng đã được IP public forwarding.`
 
-Sau khi đã gửi gói tin đến ứng dụng web, nhìn response để thấy được phản
-ứng của ứng dụng web là đã nhận file vừa được upload.
+Sau khi đã gửi gói tin đến ứng dụng web, `nhìn response` để thấy được `phản
+ứng` của `ứng dụng web` là đã `nhận` file vừa được upload.
 
-Tiếp theo set up listen trên port 80, và truy cập url mà site đã trả về.
+Tiếp theo set up listen trên port 80, và `truy cập url` mà site đã trả về.
 
 ![A screenshot of a computer Description automatically
 generated](./images/image5.png)}
