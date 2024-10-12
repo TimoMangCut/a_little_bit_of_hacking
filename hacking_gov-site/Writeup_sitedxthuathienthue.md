@@ -2,6 +2,11 @@ Mình đã khai thác được lỗi của website : https://dx.thuathienhue.gov
 
 trong lúc học ở VNcert vào đầu năm 2024.
 
+`Lưu ý:` 
+- `Các lỗ hổng đã được vá, không còn khai thác được bằng write-up dưới đây, cho nên đó là mục đích vì sao bài này lại xuất hiện.` 
+- `"Khai thác khi không được cho phép là trái pháp luật"`
+
+
 Chức năng : Đăng ký sự kiện
 
 Dưới đây là một form đăng ký sự kiện mà khi nhìn vào ta có thể thấy được
