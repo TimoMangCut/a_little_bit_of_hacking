@@ -73,8 +73,4 @@ bản.
 
 Mình đã dừng việc khai thác tại đây, vì lý do như trên.
 
-Khai thác như thế này chỉ là khai thác lỗi file upload. Theo phỏng đoán
-của mình, nếu mình khai thác bằng lỗi file inclusion thì có lẽ là một
-user khác có quyền cao hơn.
-
 - TimoMangCut
